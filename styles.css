@@ -1,0 +1,63 @@
+:root{
+    --primary-color: #14532d;
+    --secondary-color:#7f1d1d;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--primary-color);
+    color:white;
+    font-size: 20px;
+}
+
+.list-style-type-none{
+    list-style-type: none;
+}
+.textdecoration-none{
+    text-decoration:none;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+ul, li{
+    margin: 10px;
+}
+a{
+    color:white;
+}
+
+.formula{
+    padding:25px;
+    width:700px;
+    margin:auto;
+    border-radius:15px;
+    background-color: var(--secondary-color);
+}
+.container{
+    flex-direction: column;
+    text-align:center;
+    min-height:40vh;
+    margin:auto;
+}
+.input-box{
+    width:40vw;
+    height:7vh;
+    font-size:25px;
+    margin-bottom: 20px;
+}
+#calculate-btn, #is-triangle{
+    width:12vw;
+    height:5vh;
+    border-radius:10px;
+}
+#output-box{
+    margin-top:20px;
+
+}
