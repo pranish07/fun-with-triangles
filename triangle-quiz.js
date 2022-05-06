@@ -3,7 +3,7 @@ const submitBtn = document.querySelector("#submit-btn");
 const outputBox = document.querySelector("#output-box");
 
 const correctAnswers = ["90°", "right angled"];
-
+ 
 function calculateScore() {
   let score = 0;
   let index = 0;
@@ -14,7 +14,6 @@ function calculateScore() {
     }
     index = index + 1;
   }
-  console.log(score);
   outputBox.innerText="you've score is " + score  ;
 }
 

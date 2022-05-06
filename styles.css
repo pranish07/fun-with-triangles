@@ -52,12 +52,13 @@ a{
     font-size:25px;
     margin-bottom: 20px;
 }
-#calculate-btn, #is-triangle{
+#calculate-btn, #is-triangle, #submit-btn {
     width:12vw;
     height:5vh;
     border-radius:10px;
+    margin-top:20px;
 }
 #output-box{
     margin-top:20px;
 
-}
+} 

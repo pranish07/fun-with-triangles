@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Triangle Quiz</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
+
   <body>
-    <nav>
-      <ul>
-        <li><a href="./sumoftriangles.html">sum of triangles</a></li>
-        <li><a href="/">Triangle quiz</a></li>
-        <li><a href="./calculate-hypotenuse.html">calculate hypotenuse</a></li>
-        <li><a href="./area-of-triangle.html">Area of Triangle</a></li>
+    <nav class="center">
+      <ul class="list-style-type-none">
+        <li><a href="./sumoftriangles.html" class="textdecoration-none">sum of triangles</a></li>
+        <li><a href="/" class="textdecoration-none">Triangle quiz</a></li>
+        <li><a href="./calculate-hypotenuse.html" class="textdecoration-none">calculate hypotenuse</a></li>
+        <li><a href="./area-of-triangle.html" class="textdecoration-none">Area of Triangle</a></li>
       </ul>
     </nav>
+    <h1 class="center formula">Triangle Quiz</h1>
+
+    <div class="container center">
     <form class="quiz-form">
       <div>
         <h2>
@@ -30,8 +35,7 @@
       </div>
       <div>
         <h2>
-          Question1: What is the third angle for the triangle where angle1 = 45°
-          and angle2 = 45°?
+          Question2: Which of the following angles have 90°?
         </h2>
         <label
           ><input type="radio" name="question2" value="obtuse" /> obtuse
@@ -47,7 +51,8 @@
       </div>
     </form>
     <button id="submit-btn">Submit</button>
-    <h2 id="output-box"></h2>
+  </div>
+    <div id="output-box" class="center"></div>
 
     <script src="triangle-quiz.js"></script>
   </body>

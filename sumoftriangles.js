@@ -13,14 +13,11 @@ function calculateTriangle() {
     Number(inputBox[1].value),
     Number(inputBox[2].value)
   );
+  console.log(sumOfAngles);
   if (sumOfAngles === 180) {
-    // outputBox.innerText = "yay!! it is a triangle";
-    // console.log("here");
-    outputBox.innerText = "here";
-
+    outputBox.innerText = "It is a triangle";
   } else {
-    // outputBox.innerText = "ohh ohh !! it isn't a triangle";
-    console.log("not here");
+    outputBox.innerText = "It is not a triangle";
   }
 }
 
