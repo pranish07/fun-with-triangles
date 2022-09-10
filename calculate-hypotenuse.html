@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calculate Hypotenuse</title>
-</head>
-<link rel="stylesheet" href="styles.css">
-<body>
-    <nav class="center">
-    <ul class="list-style-type-none">
-        <li><a href="./sumoftriangles.html"class="textdecoration-none">sum of triangles</a></li>
-        <li><a href="./triangle-quiz.html"class="textdecoration-none">Triangle quiz</a></li>
-        <li><a href="/"class="textdecoration-none">calculate hypotenuse</a></li>
-        <li><a href="./area-of-triangle.html" class="textdecoration-none">Area of Triangle</a></li>
-      </ul>
-    </nav>
-    <h1 class="center formula">Formula of Hypotenuse = (a^2 +b^2)</h1>
-
+  </head>
+  <link rel="stylesheet" href="styles.css" />
+  <body>
+    <nav class="navbar">
+      <h2 class="isTriangle_heading">Fun with Triangles</h2>
+      <ul class="list-style-type-none isTriangle_navbar" >
+          <li><a href="./sumoftriangles.html" class="textdecoration-none" >Is Triangle?</a></li>
+          <li><a href="./triangle-quiz.html" class="textdecoration-none">Quiz</a></li>
+          <li><a href="./calculate-hypotenuse.html" class="textdecoration-none active">Hypotenuse</a></li>
+          <li><a href="./area-of-triangle.html" class="textdecoration-none ">Area of Triangle</a></li>
+        </ul>
+      </nav>
     <div class="container center">
-    <h1>calculate hypotenuse</h1>
-    <label >
-        a = <input type="number" class="input-box">
-    </label>
-    <label >
-        b = <input type="number" class="input-box">
-    </label>
-    <button id="calculate-btn">calculate</button>
-    <div id="output-box"></div>
-</div>
+      <h1>Calculate hypotenuse of a triangle</h1>
+      <label for="input1" class="angLabel">
+        Enter base value (a) =
+        <input type="number" class="input-box" id="input1" />
+      </label>
+      <label for="input1" class="angLabel">
+        Enter base value (b) =<input
+          type="number"
+          class="input-box"
+          id="input2"
+        />
+      </label>
+      <button id="calculate-btn">calculate hypotenuse</button>
+      <h2>Hypotenuse formula</h2>
+      <b>√(base² + height²)</b>
+      <div id="output-box"></div>
+    </div>
+    <footer class="online-presence">
+        <p>social media presence</p>
+        <div class="social">
+          <p><a href="https://github.com/pranish07" target="_blank">github</a> </p>
+          <p> <a href="https://twitter.com/Pranish194" target="_blank">twitter</a></p>
+          <p><a href="https://pranish-portfolio.netlify.app/" target="_blank">portfolio</a> </p>
+        </div>
+      </footer>
     <script src="calculate-hypotenuse.js"></script>
-</body>
+  </body>
 </html>

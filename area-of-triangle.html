@@ -5,30 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Area of triangle</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    
-    <nav class="center">
-      <ul class="list-style-type-none " >
-          <li><a href="./sumoftriangles.html" class="textdecoration-none" >sum of triangles</a></li>
-          <li><a href="./triangle-quiz.html" class="textdecoration-none">Triangle quiz</a></li>
-          <li><a href="./calculate-hypotenuse.html" class="textdecoration-none">calculate hypotenuse</a></li>
-          <li><a href="/" class="textdecoration-none">Area of Triangle</a></li>
-        </ul>
-      </nav>
-      <h1 class="center formula">Area of Triangle = 1/2 *(b*h)</h1>
+    <nav class="navbar">
+      <h2 class="isTriangle_heading">Fun with Triangles</h2>
+      <ul class="list-style-type-none isTriangle_navbar">
+        <li>
+          <a href="./sumoftriangles.html" class="textdecoration-none"
+            >Is Triangle?</a
+          >
+        </li>
+        <li>
+          <a href="./triangle-quiz.html" class="textdecoration-none">Quiz</a>
+        </li>
+        <li>
+          <a href="./calculate-hypotenuse.html" class="textdecoration-none"
+            >Hypotenuse</a
+          >
+        </li>
+        <li>
+          <a href="#" class="textdecoration-none active">Area of Triangle</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="box">
+      <h2 class="center formula">Calculate Area of a triangle</h2>
 
       <div class="container center">
-    <label>Base</label>
-    <input type="number" class="input-box" />
+        <label>Enter the first side of triangle</label>
+        <input type="number" class="input-box" />
 
-    <label>Height</label>
-    <input type="number" class="input-box" />
-    <button id ="calculate-btn">Calculate</button>
-  </div>
-    <div id="output-box" class="center"></div>
-  
+        <label>Enter the second side of triangle</label>
+        <input type="number" class="input-box" />
+
+        <label>Enter the third side of triangle</label>
+        <input type="number" class="input-box" />
+        
+        <button id="calculate-btn">Calculate</button>
+      </div>
+      <div id="output-box" class="center"></div>
+    </div>
+    <footer class="online-presence">
+      <p>social media presence</p>
+      <div class="social">
+        <p><a href="https://github.com/pranish07" target="_blank">github</a></p>
+        <p>
+          <a href="https://twitter.com/Pranish194" target="_blank">twitter</a>
+        </p>
+        <p>
+          <a href="https://pranish-portfolio.netlify.app/" target="_blank"
+            >portfolio</a
+          >
+        </p>
+      </div>
+    </footer>
     <script src="./area-of-triangle.js"></script>
   </body>
 </html>

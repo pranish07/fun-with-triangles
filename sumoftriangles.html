@@ -8,28 +8,39 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <nav class="center" >
-      <ul class="list-style-type-none">
-        <li><a href="/"class="textdecoration-none">sum of triangles</a></li>
-        <li><a href="./triangle-quiz.html" class="textdecoration-none">Triangle quiz</a></li>
-        <li><a href="./calculate-hypotenuse.html" class="textdecoration-none">calculate hypotenuse</a></li>
-        <li><a href="./area-of-triangle.html" class="textdecoration-none">Area of Triangle</a></li>
-     
-      </ul>
-    </nav>
-      <h1 class="center formula">Sum of Triangles</h1>
+    <nav class="navbar">
+      <h2 class="isTriangle_heading">Fun with Triangles</h2>
+      <ul class="list-style-type-none isTriangle_navbar" >
+          <li><a href="./sumoftriangles.html" class="textdecoration-none active">Is Triangle?</a></li>
+          <li><a href="./triangle-quiz.html" class="textdecoration-none">Quiz</a></li>
+          <li><a href="./calculate-hypotenuse.html" class="textdecoration-none">Hypotenuse</a></li>
+          <li><a href="./area-of-triangle.html" class="textdecoration-none">Area of Triangle</a></li>
+        </ul>
+      </nav>
+      <h2 class="center formula">Sum of Triangles</h2>
 
     <div class="container center">
-    <label>angle1</label>
-    <input type="number" class="input-box" />
-    <label>angle2</label>
-    <input type="number" class="input-box" />
-    <label>angle3</label>
-    <input type="number" class="input-box" />
+    <label for="input1" class="angLabel" >Angle1
+    <input type="number" class="input-box" id="input1"/>
+    </label>
+    <label for="input2" class="angLabel">Angle2
+    <input type="number" class="input-box" id="input2"/>
+  </label>
+    <label for="input3" class="angLabel">Angle3
+    <input type="number" class="input-box" id="input3"/>
+  </label>
 
     <button id="is-triangle">Is triangle?</button>
   </div>
     <div id="output-box" class="center"></div>
+    <footer class="online-presence">
+      <p>social media presence</p>
+      <div class="social">
+        <p><a href="https://github.com/pranish07" target="_blank">github</a> </p>
+        <p> <a href="https://twitter.com/Pranish194" target="_blank">twitter</a></p>
+        <p><a href="https://pranish-portfolio.netlify.app/" target="_blank">portfolio</a> </p>
+      </div>
+    </footer>
     <script src="sumoftriangles.js"></script>
   </body>
 </html>
