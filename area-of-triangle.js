@@ -10,8 +10,8 @@ function solveArea(a, b, c) {
     const sum = (a + b + c) / 2;
     let solve =
       "The area is : " +
-      Math.sqrt(sum * (sum - a) * (sum - b) * (sum - c)) +
-      "units";
+      Math.sqrt(sum * (sum - a) * (sum - b) * (sum - c)).toFixed(2) +
+      " units";
 
     return solve;
   }
